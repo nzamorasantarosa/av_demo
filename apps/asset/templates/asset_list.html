@@ -220,8 +220,8 @@
                 </td>
                 <td class="text-center">SiRenta</td>
                 <td class="text-center">Inmobiliario</td>
-                <td class="text-center">78.352.439.315</td>
-                <td class="text-center">13.608</td>
+                <td class="text-center">COP $78.352.439.315</td>
+                <td class="text-center">COP $13.608</td>
 
                 <td class="project_progress">
                         <small>
@@ -232,11 +232,11 @@
                             </div>
                         </div>
                         <small>
-                            Fondo pendiente de aprobacion
+                            Fondo pendiente de aprobación
                         </small>
                     </td>
                     <td class="text-center">
-                      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#detailsModal" onclick="showDetails">
+                      <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#detailsModal" onclick="showDetails('001', 'SiRenta', 'Inmobiliario', 'COP $78.352.439.315', 'Fondo pendiente de aprobacion'); return false;">
                         <i class="fas fa-folder"></i>
                         Ver
                       </button>
@@ -259,8 +259,8 @@
                 </td>
                 <td class="text-center">FORE</td>
                 <td class="text-center">Fondo de capital privado</td>
-                <td class="text-center">4.379.337.256</td>
-                <td class="text-center">12.465</td>
+                <td class="text-center">COP $4.379.337.256</td>
+                <td class="text-center">COP $12.465</td>
 
                 <td class="project_progress">
                         <small>
@@ -300,8 +300,8 @@
                 </td>
                 <td class="text-center">Accival</td>
                 <td class="text-center">Renta Fija</td>
-                <td class="text-center">540.301.931.653</td>
-                <td class="text-center">8.763</td>
+                <td class="text-center">COP $540.301.931.653</td>
+                <td class="text-center">COP $8.763</td>
 
                 <td class="project_progress">
                         <small>
@@ -341,8 +341,8 @@
                 </td>
                 <td class="text-center">Accicuenta (Moderado)</td>
                 <td class="text-center">Renta fija, renta variable</td>
-                <td class="text-center">44.899.838.715</td>
-                <td class="text-center">11.814</td>
+                <td class="text-center">COP $44.899.838.715</td>
+                <td class="text-center">COP $11.814</td>
 
                 <td class="project_progress">
                         <small>
@@ -382,8 +382,8 @@
                 </td>
                 <td class="text-center">ETF 500 Acciones U.S</td>
                 <td class="text-center">Renta variable</td>
-                <td class="text-center">26.481.124.794</td>
-                <td class="text-center">12.592</td>
+                <td class="text-center">COP $26.481.124.794</td>
+                <td class="text-center">COP $12.592</td>
 
                 <td class="project_progress">
                         <small>
@@ -423,8 +423,8 @@
                 </td>
                 <td class="text-center">Acciones Dinámico</td>
                 <td class="text-center">Renta variable</td>
-                <td class="text-center">11.948.774.647</td>
-                <td class="text-center">11.487</td>
+                <td class="text-center">COP $11.948.774.647</td>
+                <td class="text-center">COP $11.487</td>
 
                 <td class="project_progress">
                         <small>
@@ -552,36 +552,36 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="detailsModalLabel" style="color:#322579">Detalles del Fondo</h5>
+          <h5 class="modal-title" id="detailsModalLabel" style="font-size:1.2rem;font-weight:bold;padding-bottom:8px;color:#322579">Detalles del Fondo</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <p><strong>ID:</strong> <span id="modal-fondo-id">001</span></p>
+          <p><strong>Id:</strong> <span id="modal-fondo-id">001</span></p>
           <p><strong>Fondo:</strong> <span id="modal-fondo-nombre">SiRenta</span></p>
           <p><strong>Tipo de fondo:</strong> <span id="modal-fondo-tipo">Inmobiliario</span></p>
-          <p><strong>Valor del fondo:</strong> <span id="modal-fondo-valor">78.352.439.315</span></p>
-          <p><strong>Valor de la unidad:</strong> <span id="modal-fondo-valor">13.608</span></p>
-          <p><strong>Estado:</strong> <span id="modal-fondo-estado">Fondo pendiente de aprobacion</span></p>
-          <p><strong>Numero de inversionistas:</strong> <span id="modal-fondo-estado">596.949</span></p>
+          <p><strong>Valor del fondo:</strong> <span id="modal-fondo-valor">COP $78.352.439.315</span></p>
+          <p><strong>Valor de la unidad:</strong> <span id="modal-fondo-valor">COP $13.608</span></p>
+          <p><strong>Estado:</strong> <span id="modal-fondo-estado">Fondo pendiente de aprobación</span></p>
+          <p><strong>Número de inversionistas:</strong> <span id="modal-fondo-estado">596.949</span></p>
           <p><strong>TIR E.A.:</strong> <span id="modal-fondo-estado">9.5-11.5%</span></p>
 
           <hr>
 
-          <div style="font-size:1.2rem;font-weight:bold;padding-bottom:8px;color:#322579">Informacion Tecnica</div>
-          <p><strong>Tipo de FIC:</strong> <span id="modal-fondo-estado">Fondo de inversion colectiva nmobiliario</span></p>
-          <p><strong>Inicio de operaciones</strong> <span id="modal-fondo-estado">18/12/2019</span></p>
-          <p><strong>Valor del FIc (Millones COP)</strong> <span id="modal-fondo-estado">200.000.000.000</span></p>
-          <p><strong>N de Unidades en circulacion</strong> <span id="modal-fondo-estado">5.004.567,6554</span></p>
+          <div style="font-size:1.2rem;font-weight:bold;padding-bottom:8px;color:#322579">Información Técnica</div>
+          <p><strong>Tipo de FIC:</strong> <span id="modal-fondo-estado">Fondo de inversión colectiva inmobiliario</span></p>
+          <p><strong>Inicio de operaciones:</strong> <span id="modal-fondo-estado">18/12/2019</span></p>
+          <p><strong>Valor del FIc (Millones COP):</strong> <span id="modal-fondo-estado">COP $200.000.000.000</span></p>
+          <p><strong>No de Unidades en circulación:</strong> <span id="modal-fondo-estado">5.004.567</span></p>
 
           <hr>
 
-          <div style="font-size:1.2rem;font-weight:bold;padding-bottom:8px;color:#322579">Historico</div>
-          <p><strong>N de transacciones historicas:</strong> <span id="modal-fondo-estado">323.343.596</span></p>
-          <p><strong>Ultimo mes</strong> <span id="modal-fondo-estado">954</span></p>
-          <p><strong>Ultimos 6 meses:</strong> <span id="modal-fondo-estado">7.405</span></p>
-          <p><strong>Ultimo año</strong> <span id="modal-fondo-estado">18.950</span></p>
+          <div style="font-size:1.2rem;font-weight:bold;padding-bottom:8px;color:#322579">Histórico</div>
+          <p><strong>No de transacciones historicas:</strong> <span id="modal-fondo-estado">323.343.596</span></p>
+          <p><strong>Último mes:</strong> <span id="modal-fondo-estado">954</span></p>
+          <p><strong>Últimos 6 meses:</strong> <span id="modal-fondo-estado">7.405</span></p>
+          <p><strong>Último año:</strong> <span id="modal-fondo-estado">18.950</span></p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
